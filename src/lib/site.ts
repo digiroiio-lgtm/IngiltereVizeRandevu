@@ -203,6 +203,81 @@ export const blogPosts = [
     excerpt: "Çok girişli vize için seyahat profili ve belge stratejisi.",
     category: "Support",
   },
+  // TIER S — MAX CONVERSION
+  {
+    slug: "ingiltere-vize-basvurusu-nasil-yapilir",
+    title: "İngiltere Vize Başvurusu Nasıl Yapılır? (2026 Güncel Rehber)",
+    excerpt: "İngiltere vize başvurusunda doğru adımlar, evrak düzeni ve süreç yönetimi.",
+    category: "Money Page",
+  },
+  {
+    slug: "ingiltere-vizesi-icin-gerekli-evraklar",
+    title: "İngiltere Vizesi İçin Gerekli Evraklar (2026 Tam Liste)",
+    excerpt: "Başvuru dosyanızı eksiksiz hazırlamak için tüm evrak listesi ve checklist.",
+    category: "Money Page",
+  },
+  {
+    slug: "vfs-global-belge-yukleme-nasil-yapilir",
+    title: "VFS Global Belge Yükleme Nasıl Yapılır?",
+    excerpt: "VFS sistemi üzerinden belge yükleme adımları, PDF hazırlığı ve yaygın hatalar.",
+    category: "Money Page",
+  },
+  {
+    slug: "ingiltere-vize-randevusu-nasil-alinir",
+    title: "İngiltere Vize Randevusu Nasıl Alınır?",
+    excerpt: "VFS randevu sistemi üzerinden adım adım randevu alma rehberi.",
+    category: "Money Page",
+  },
+  // TIER A — HIGH AUTHORITY
+  {
+    slug: "ingiltere-vizesi-icin-bankada-ne-kadar-para-olmali",
+    title: "İngiltere Vizesi İçin Bankada Ne Kadar Para Olmalı?",
+    excerpt: "UKVI'nin beklediği finansal yeterlilik düzeyi ve banka hesabı hazırlığı.",
+    category: "Money Page",
+  },
+  {
+    slug: "sponsorlu-ingiltere-vizesi-rehberi",
+    title: "Sponsorlu İngiltere Vizesi Rehberi",
+    excerpt: "Sponsor ilişkisi, destekleyici evraklar ve dosya kurgusu.",
+    category: "Money Page",
+  },
+  {
+    slug: "ingiltere-vizesi-cover-letter-ornegi",
+    title: "İngiltere Vizesi İçin Cover Letter Nasıl Yazılır?",
+    excerpt: "Niyet mektubu yapısı, içerik stratejisi ve dikkat edilmesi gereken noktalar.",
+    category: "Money Page",
+  },
+  {
+    slug: "ingiltere-multiple-entry-vize",
+    title: "İngiltere Multiple Entry Vizesi Nasıl Alınır?",
+    excerpt: "Çok girişli vize için seyahat geçmişi, profil kurgusu ve başvuru stratejisi.",
+    category: "Money Page",
+  },
+  // TIER B — TOPICAL AUTHORITY
+  {
+    slug: "gov-uk-uzerinden-ingiltere-vize-basvurusu",
+    title: "GOV.UK Üzerinden İngiltere Vize Başvurusu",
+    excerpt: "Resmi portal üzerinden başvuru akışı, form doldurma ve ödeme adımları.",
+    category: "Support",
+  },
+  {
+    slug: "ingiltere-vize-basvuru-formu",
+    title: "İngiltere Vize Başvuru Formu Nasıl Doldurulur?",
+    excerpt: "Online başvuru formunda dikkat edilmesi gereken kritik alanlar.",
+    category: "Support",
+  },
+  {
+    slug: "ingiltere-turist-vizesi-rehberi",
+    title: "İngiltere Turist Vizesi Rehberi",
+    excerpt: "Turist vizesi için gereken belgeler, finansal yeterlilik ve başvuru stratejisi.",
+    category: "Support",
+  },
+  {
+    slug: "vfs-randevu-gunu",
+    title: "VFS Randevu Günü Ne Olur?",
+    excerpt: "Randevu günü hazırlığı, biyometrik işlemler ve dikkat edilmesi gerekenler.",
+    category: "Support",
+  },
 ];
 
 export const coreLinks = [
