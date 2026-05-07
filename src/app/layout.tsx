@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import "./globals.css";
 import { JsonLd } from "@/components/json-ld";
 import { navigation, siteConfig } from "@/lib/site";
@@ -80,14 +81,15 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 h-[78px] border-b border-[#E2E8F0] bg-white/85 backdrop-blur-xl">
           <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-6">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 shrink-0">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#2563EB] text-white text-sm font-bold select-none">
-                UK
-              </span>
-              <span className="hidden font-semibold text-[15px] tracking-tight text-[#0F172A] sm:block leading-tight">
-                İngiltere Vize<br />
-                <span className="text-[11px] font-normal text-[#64748B] tracking-normal">Randevu & Danışmanlık</span>
-              </span>
+            <Link href="/" className="flex items-center shrink-0">
+              <Image
+                src="/logo.jpeg"
+                alt="İngiltere Vize Randevu Logo"
+                width={140}
+                height={50}
+                className="h-12 w-auto object-contain"
+                priority
+              />
             </Link>
 
             {/* Nav */}
