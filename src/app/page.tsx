@@ -287,7 +287,7 @@ export default function Home() {
               label: "BIOMETRICS",
               title: "Biometrik Randevu",
               desc: "Pasaport, biyometri ve supporting documents sürecinin koordinasyonu.",
-              image: "/images/uk-visa/uk-biometric-center.jpeg",
+              image: "/images/uk-visa/uk-biometric-center-2.jpeg",
               alt: "UK Biometric Center — Biometrik Randevu",
               href: "/vfs-global-randevu",
               priority: false,
