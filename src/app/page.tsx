@@ -8,6 +8,14 @@ export const metadata = pageMetadata(
   "/",
 );
 
+function ArrowRightIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M5 12h14M12 5l7 7-7 7" />
+    </svg>
+  );
+}
+
 const stats = [
   { value: "1.200+", label: "Başarılı Başvuru" },
   { value: "%94", label: "İlk Başvuruda Onay" },
@@ -273,6 +281,7 @@ export default function Home() {
               image: "/images/uk-visa/tower-bridge-london.jpeg",
               alt: "Tower Bridge London — VFS Workflow",
               href: "/vfs-rehberi",
+              priority: true,
             },
             {
               label: "BIOMETRICS",
@@ -281,6 +290,7 @@ export default function Home() {
               image: "/images/uk-visa/uk-biometric-center.jpeg",
               alt: "UK Biometric Center — Biometrik Randevu",
               href: "/vfs-global-randevu",
+              priority: false,
             },
             {
               label: "UPLOAD SYSTEM",
@@ -289,6 +299,7 @@ export default function Home() {
               image: "/images/uk-visa/vfs-upload-system.jpeg",
               alt: "VFS Upload System — Upload Intelligence",
               href: "/vfs-rehberi",
+              priority: false,
             },
           ].map((card) => (
             <Link
@@ -302,6 +313,7 @@ export default function Home() {
                   src={card.image}
                   alt={card.alt}
                   fill
+                  priority={card.priority}
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
@@ -315,9 +327,7 @@ export default function Home() {
                 <p className="text-neutral-600 leading-relaxed text-sm flex-1">{card.desc}</p>
                 <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-blue-600 group-hover:gap-2 transition-all duration-200">
                   İncele
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
+                  <ArrowRightIcon />
                 </span>
               </div>
             </Link>
