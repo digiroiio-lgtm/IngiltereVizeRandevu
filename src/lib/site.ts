@@ -1,0 +1,214 @@
+import type { Metadata } from "next";
+
+export const siteConfig = {
+  name: "İngiltere Vize Randevu",
+  url: "https://ingilterevizerandevu.com",
+  whatsapp: "https://wa.me/905555555555",
+  phone: "+90 212 000 00 00",
+  email: "destek@ingilterevizerandevu.com",
+};
+
+export function pageMetadata(title: string, description: string, path: string): Metadata {
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      title,
+      description,
+      url: `${siteConfig.url}${path}`,
+      siteName: siteConfig.name,
+      locale: "tr_TR",
+      type: "website",
+    },
+  };
+}
+
+export const navigation = [
+  { href: "/", label: "Ana Sayfa" },
+  { href: "/hakkimizda", label: "Hakkımızda" },
+  { href: "/ucretler", label: "Ücretler" },
+  { href: "/vfs-rehberi", label: "VFS Rehberi" },
+  { href: "/uk-vize-merkezleri", label: "Vize Merkezleri" },
+  { href: "/blog", label: "Blog" },
+  { href: "/sss", label: "SSS" },
+  { href: "/iletisim", label: "İletişim" },
+];
+
+export const processSteps = [
+  "Doğru vize türünün belirlenmesi",
+  "Online başvuru hazırlığı",
+  "UK vize ücret planlaması",
+  "VFS randevu organizasyonu",
+  "Destekleyici belge hazırlığı",
+  "PDF & upload optimizasyonu",
+  "Başvuru takibi",
+  "Pasaport teslim süreci",
+];
+
+export const govFees = [
+  { category: "Standard Visitor - 6 ay", fee: "$190" },
+  { category: "Standard Visitor - 2 yıl", fee: "$713" },
+  { category: "Standard Visitor - 5 yıl", fee: "$1273" },
+  { category: "Standard Visitor - 10 yıl", fee: "$1590" },
+  { category: "DATV Transit", fee: "$59" },
+  { category: "Transit Visitor", fee: "$105" },
+  { category: "Short Term Student", fee: "$321" },
+  { category: "Parent Visa", fee: "$1023" },
+];
+
+export const consultancyFees = [
+  { package: "Tek Başvuru Sahibi", gbp: "£115", tl: "6.750 TL" },
+  { package: "2 Başvuru Sahibi", gbp: "£100 / kişi", tl: "6.000 TL / kişi" },
+  { package: "Aile Başvurusu - Yetişkin 1", gbp: "-", tl: "6.000 TL" },
+  { package: "Aile Başvurusu - Yetişkin 2", gbp: "-", tl: "6.000 TL" },
+  { package: "Aile Başvurusu - 18 Yaş Altı", gbp: "-", tl: "3.000 TL / çocuk" },
+];
+
+export const faqItems = [
+  {
+    q: "İngiltere vize randevu nasıl alınır?",
+    a: "Doğru vize türünü seçtikten sonra online form doldurulur, ücret ödenir ve VFS biyometri randevusu oluşturulur.",
+  },
+  {
+    q: "İngiltere vizesi kaç günde çıkar?",
+    a: "Yoğunluğa göre değişebilir. Ortalama süreler başvuru tipine ve döneme göre farklılaşır.",
+  },
+  {
+    q: "VFS randevusu nasıl alınır?",
+    a: "Form ve ödeme adımları tamamlandıktan sonra VFS sisteminden uygun tarih-saat seçilerek alınır.",
+  },
+  {
+    q: "Bankada ne kadar para olmalı?",
+    a: "Sabit bir rakam yoktur. Seyahat planı, gelir-gider dengesi ve finansal sürdürülebilirlik birlikte değerlendirilir.",
+  },
+  {
+    q: "Sponsorlu başvuru yapılabilir mi?",
+    a: "Evet. Sponsorun finansal belgeleri ve başvuru sahibiyle ilişkisini destekleyen evraklarla yapılabilir.",
+  },
+  {
+    q: "Çok girişli vize nasıl alınır?",
+    a: "Seyahat geçmişi, gerekçe ve finansal profilin doğru yapılandırılmasıyla çok girişli uzun süreli visitor vizelere başvurulabilir.",
+  },
+  {
+    q: "Uçak bileti gerekli mi?",
+    a: "Kesin satın alım zorunlu değildir. Ancak tutarlı bir seyahat planı ve rezervasyon mantığı önemlidir.",
+  },
+  {
+    q: "Vize reddi durumunda ne olur?",
+    a: "Ret gerekçesi analiz edilerek dosya revize edilir, yeni strateji ile yeniden başvuru hazırlanır.",
+  },
+];
+
+export const centers = [
+  { city: "İstanbul", hours: "08:00 – 18:00" },
+  { city: "Ankara", hours: "09:00 – 17:00" },
+  { city: "Antalya", hours: "09:00 – 17:00" },
+  { city: "İzmir", hours: "09:00 – 17:00" },
+  { city: "Adana", hours: "09:00 – 17:00" },
+  { city: "Bursa", hours: "09:00 – 17:00" },
+  { city: "Gaziantep", hours: "09:00 – 17:00" },
+  { city: "Trabzon", hours: "09:00 – 17:00" },
+  { city: "Altunizade", hours: "09:00 – 17:00" },
+];
+
+export const blogPosts = [
+  {
+    slug: "ingiltere-vize-basvurusu",
+    title: "İngiltere Vize Başvurusu: Adım Adım Süreç Yönetimi",
+    excerpt: "Başvurudan pasaport teslimine kadar süreç akışı.",
+    category: "Money Page",
+  },
+  {
+    slug: "ingiltere-vize-evraklari",
+    title: "İngiltere Vize Evrakları: Tam Kontrol Listesi",
+    excerpt: "Başvuru dosyanızı eksiksiz hale getiren evrak mimarisi.",
+    category: "Money Page",
+  },
+  {
+    slug: "ingiltere-vize-ucreti-2026",
+    title: "İngiltere Vize Ücreti 2026 Rehberi",
+    excerpt: "Güncel UKVI ücretleri ve danışmanlık ücret ayrımı.",
+    category: "Money Page",
+  },
+  {
+    slug: "ingiltere-turist-vizesi",
+    title: "İngiltere Turist Vizesi Dosya Stratejisi",
+    excerpt: "Turist vizesi dosyasında finansal ve operasyonel doğruluk.",
+    category: "Money Page",
+  },
+  {
+    slug: "ingiltere-business-visa",
+    title: "İngiltere Business Visa Başvurusu",
+    excerpt: "Şirket sahipleri ve iş seyahati profesyonelleri için yapı.",
+    category: "Money Page",
+  },
+  {
+    slug: "ingiltere-vize-randevusu",
+    title: "İngiltere Vize Randevusu Planlama Kılavuzu",
+    excerpt: "VFS randevu planlama, evrak eşleşmesi ve tarih optimizasyonu.",
+    category: "Money Page",
+  },
+  {
+    slug: "vfs-upload-nasil-yapilir",
+    title: "VFS Upload Nasıl Yapılır?",
+    excerpt: "PDF hazırlığı, isimlendirme ve belge eşleştirme.",
+    category: "Support",
+  },
+  {
+    slug: "ingiltere-vize-red-nedenleri",
+    title: "İngiltere Vize Red Nedenleri",
+    excerpt: "Sık ret nedenleri ve önleyici başvuru stratejileri.",
+    category: "Support",
+  },
+  {
+    slug: "bank-statement-nasil-hazirlanir",
+    title: "Bank Statement Nasıl Hazırlanır?",
+    excerpt: "Hesap hareketlerinin finansal anlatım gücünü artırma.",
+    category: "Support",
+  },
+  {
+    slug: "sponsorlu-basvuru-rehberi",
+    title: "Sponsorlu Başvuru Rehberi",
+    excerpt: "Sponsor evrakları ve ilişki ispat düzeni.",
+    category: "Support",
+  },
+  {
+    slug: "sirket-sahipleri-icin-ingiltere-vizesi",
+    title: "Şirket Sahipleri için İngiltere Vizesi",
+    excerpt: "Ticari faaliyet belgeleriyle güçlü dosya kurgusu.",
+    category: "Support",
+  },
+  {
+    slug: "pdf-dosya-isimlendirme-rehberi",
+    title: "PDF Dosya İsimlendirme Rehberi",
+    excerpt: "VFS yüklemede düzenli klasör ve dosya standartları.",
+    category: "Support",
+  },
+  {
+    slug: "ingiltere-vizesi-kac-gunde-cikar",
+    title: "İngiltere Vizesi Kaç Günde Çıkar?",
+    excerpt: "Süreleri etkileyen değişkenler ve planlama önerileri.",
+    category: "Support",
+  },
+  {
+    slug: "ingiltere-vizesi-icin-hesapta-ne-kadar-para-olmali",
+    title: "İngiltere Vizesi için Hesapta Ne Kadar Para Olmalı?",
+    excerpt: "Finansal yeterlilikte tek rakam değil tutarlılık esastır.",
+    category: "Support",
+  },
+  {
+    slug: "ingiltere-multiple-entry-vizesi",
+    title: "İngiltere Multiple Entry Vizesi",
+    excerpt: "Çok girişli vize için seyahat profili ve belge stratejisi.",
+    category: "Support",
+  },
+];
+
+export const coreLinks = [
+  "/ucretler",
+  "/vfs-global-randevu",
+  "/sss",
+  "/iletisim",
+  "/blog",
+];
