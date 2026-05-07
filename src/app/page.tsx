@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { consultancyFees, faqItems, govFees, pageMetadata, processSteps, siteConfig } from "@/lib/site";
 
 export const metadata = pageMetadata(
@@ -263,32 +264,63 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3">
           {[
             {
+              label: "WORKFLOW",
               title: "VFS Workflow",
-              desc: "Form sonrası randevu slot yönetimi, merkez seçimi ve dosya planlama yapılır.",
-              icon: "⚙️",
+              desc: "Başvuru sonrası randevu slot yönetimi, merkez seçimi ve evrak planlaması.",
+              image: "/images/uk-visa/tower-bridge-london.jpeg",
+              alt: "Tower Bridge London — VFS Workflow",
+              href: "/vfs-rehberi",
             },
             {
-              title: "Biyometrik Randevu",
-              desc: "Biyometri gününde pasaport, başvuru dökümleri ve destekleyici evrak eşleştirmesi.",
-              icon: "🪪",
+              label: "BIOMETRICS",
+              title: "Biometrik Randevu",
+              desc: "Pasaport, biyometri ve supporting documents sürecinin koordinasyonu.",
+              image: "/images/uk-visa/uk-biometric-center.jpeg",
+              alt: "UK Biometric Center — Biometrik Randevu",
+              href: "/vfs-global-randevu",
             },
             {
+              label: "UPLOAD SYSTEM",
               title: "Upload Intelligence",
-              desc: "PDF boyutu, isimlendirme ve kategori doğruluğu ret riskini önemli ölçüde düşürür.",
-              icon: "☁️",
+              desc: "PDF boyutu, kategori eşleşmesi ve naming structure optimizasyonu.",
+              image: "/images/uk-visa/vfs-upload-system.jpeg",
+              alt: "VFS Upload System — Upload Intelligence",
+              href: "/vfs-rehberi",
             },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="hover-lift rounded-[22px] border border-[#E2E8F0] bg-white p-6 space-y-3"
+          ].map((card) => (
+            <Link
+              key={card.title}
+              href={card.href}
+              className="group flex flex-col rounded-3xl border border-neutral-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
-              <span className="text-3xl">{item.icon}</span>
-              <h3 className="font-semibold text-[#0F172A]">{item.title}</h3>
-              <p className="text-sm leading-relaxed text-[#64748B]">{item.desc}</p>
-            </div>
+              {/* Image */}
+              <div className="relative aspect-video overflow-hidden rounded-t-3xl">
+                <Image
+                  src={card.image}
+                  alt={card.alt}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              </div>
+
+              {/* Content */}
+              <div className="flex flex-col flex-1 gap-2 p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">{card.label}</p>
+                <h3 className="text-2xl font-semibold tracking-tight text-[#0F172A]">{card.title}</h3>
+                <p className="text-neutral-600 leading-relaxed text-sm flex-1">{card.desc}</p>
+                <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-blue-600 group-hover:gap-2 transition-all duration-200">
+                  İncele
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </Link>
           ))}
         </div>
 
