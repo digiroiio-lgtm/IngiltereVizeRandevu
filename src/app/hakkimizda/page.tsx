@@ -136,9 +136,7 @@ export default function AboutPage() {
           İçerik ve süreç mimarimiz; yüzlerce farklı profilin yönetilmesinden elde edilen gerçek dünya deneyimiyle
           şekillenmiştir. UKVI mevzuatı değiştikçe hizmet anlayışımızı ve içeriklerimizi güncellemeye devam ediyoruz.
         </p>
-        <Link href="/yazar/oguz-yumuk" className="inline-block rounded-md bg-slate-900 px-4 py-2 text-sm text-white">
-          Baş Danışman Profili →
-        </Link>
+
       </section>
 
       {/* CTA */}

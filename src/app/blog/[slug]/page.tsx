@@ -23,7 +23,7 @@ export default function BlogDetailPage({ params }: { params: { slug: string } })
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    author: { "@type": "Person", name: "Oğuz Yumuk", url: `${siteConfig.url}/yazar/oguz-yumuk` },
+    author: { "@type": "Organization", name: siteConfig.name },
     publisher: { "@type": "Organization", name: siteConfig.name },
     mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}`,
   };
