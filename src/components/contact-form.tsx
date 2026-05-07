@@ -1,30 +1,36 @@
 export function ContactForm() {
   return (
-    <form className="space-y-3 rounded-xl border border-slate-200 bg-white p-5">
+    <form className="space-y-3 rounded-xl border border-slate-200 bg-white p-5" action="#" method="post">
       <label className="block text-sm font-medium text-slate-700" htmlFor="adSoyad">
         Ad Soyad
       </label>
-      <input id="adSoyad" className="w-full rounded-md border border-slate-300 p-2" placeholder="Ad Soyad" />
+      <input id="adSoyad" name="adSoyad" type="text" className="w-full rounded-md border border-slate-300 p-2" placeholder="Ad Soyad" />
       <label className="block text-sm font-medium text-slate-700" htmlFor="telefon">
         Telefon
       </label>
-      <input id="telefon" className="w-full rounded-md border border-slate-300 p-2" placeholder="Telefon" />
+      <input id="telefon" name="telefon" type="tel" className="w-full rounded-md border border-slate-300 p-2" placeholder="Telefon" />
       <label className="block text-sm font-medium text-slate-700" htmlFor="eposta">
         E-posta
       </label>
-      <input id="eposta" className="w-full rounded-md border border-slate-300 p-2" placeholder="E-posta" />
+      <input id="eposta" name="eposta" type="email" className="w-full rounded-md border border-slate-300 p-2" placeholder="E-posta" />
       <label className="block text-sm font-medium text-slate-700" htmlFor="vizeTuru">
         Vize Türü
       </label>
-      <input id="vizeTuru" className="w-full rounded-md border border-slate-300 p-2" placeholder="Vize Türü" />
+      <input id="vizeTuru" name="vizeTuru" type="text" className="w-full rounded-md border border-slate-300 p-2" placeholder="Vize Türü" />
       <label className="block text-sm font-medium text-slate-700" htmlFor="seyahatTarihi">
         Seyahat Tarihi
       </label>
-      <input id="seyahatTarihi" className="w-full rounded-md border border-slate-300 p-2" placeholder="Seyahat Tarihi" />
+      <input
+        id="seyahatTarihi"
+        name="seyahatTarihi"
+        type="date"
+        className="w-full rounded-md border border-slate-300 p-2"
+        placeholder="Seyahat Tarihi"
+      />
       <label className="block text-sm font-medium text-slate-700" htmlFor="redDurumu">
         Daha Önce Red Aldınız mı?
       </label>
-      <select id="redDurumu" className="w-full rounded-md border border-slate-300 p-2" defaultValue="">
+      <select id="redDurumu" name="redDurumu" className="w-full rounded-md border border-slate-300 p-2" defaultValue="">
         <option value="" disabled>
           Daha Önce Red Aldınız mı?
         </option>

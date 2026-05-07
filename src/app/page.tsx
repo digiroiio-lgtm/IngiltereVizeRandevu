@@ -47,32 +47,38 @@ export default function Home() {
           </div>
         </div>
 
-        <form className="space-y-3 rounded-xl border border-slate-200 p-5">
+        <form className="space-y-3 rounded-xl border border-slate-200 p-5" action="#" method="post">
           <h2 className="text-lg font-semibold">Ücretsiz Ön İnceleme Formu</h2>
           <label className="block text-sm font-medium text-slate-700" htmlFor="homeAdSoyad">
             Ad Soyad
           </label>
-          <input id="homeAdSoyad" className="w-full rounded-md border border-slate-300 p-2" placeholder="Ad Soyad" />
+          <input id="homeAdSoyad" name="adSoyad" type="text" className="w-full rounded-md border border-slate-300 p-2" placeholder="Ad Soyad" />
           <label className="block text-sm font-medium text-slate-700" htmlFor="homeTelefon">
             Telefon
           </label>
-          <input id="homeTelefon" className="w-full rounded-md border border-slate-300 p-2" placeholder="Telefon" />
+          <input id="homeTelefon" name="telefon" type="tel" className="w-full rounded-md border border-slate-300 p-2" placeholder="Telefon" />
           <label className="block text-sm font-medium text-slate-700" htmlFor="homeEposta">
             E-posta
           </label>
-          <input id="homeEposta" className="w-full rounded-md border border-slate-300 p-2" placeholder="E-posta" />
+          <input id="homeEposta" name="eposta" type="email" className="w-full rounded-md border border-slate-300 p-2" placeholder="E-posta" />
           <label className="block text-sm font-medium text-slate-700" htmlFor="homeVizeTuru">
             Vize Türü
           </label>
-          <input id="homeVizeTuru" className="w-full rounded-md border border-slate-300 p-2" placeholder="Vize Türü" />
+          <input id="homeVizeTuru" name="vizeTuru" type="text" className="w-full rounded-md border border-slate-300 p-2" placeholder="Vize Türü" />
           <label className="block text-sm font-medium text-slate-700" htmlFor="homeSeyahatTarihi">
             Seyahat Tarihi
           </label>
-          <input id="homeSeyahatTarihi" className="w-full rounded-md border border-slate-300 p-2" placeholder="Seyahat Tarihi" />
+          <input
+            id="homeSeyahatTarihi"
+            name="seyahatTarihi"
+            type="date"
+            className="w-full rounded-md border border-slate-300 p-2"
+            placeholder="Seyahat Tarihi"
+          />
           <label className="block text-sm font-medium text-slate-700" htmlFor="homeRedDurumu">
             Daha Önce Red Aldınız mı?
           </label>
-          <select id="homeRedDurumu" className="w-full rounded-md border border-slate-300 p-2" defaultValue="">
+          <select id="homeRedDurumu" name="redDurumu" className="w-full rounded-md border border-slate-300 p-2" defaultValue="">
             <option value="" disabled>
               Daha Önce Red Aldınız mı?
             </option>

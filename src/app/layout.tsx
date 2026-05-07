@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const orgSchema = {
+const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: siteConfig.name,
@@ -67,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="tr" className="h-full antialiased">
       <body className="min-h-full bg-slate-50 text-slate-900">
-        <JsonLd data={orgSchema} />
+        <JsonLd data={organizationSchema} />
         <JsonLd data={websiteSchema} />
         <JsonLd data={serviceSchema} />
         <JsonLd data={localBusinessSchema} />
