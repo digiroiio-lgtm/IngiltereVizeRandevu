@@ -86,7 +86,7 @@ export default function RootLayout({
                 src="/logo.jpeg"
                 alt="İngiltere Vize Randevu Logo"
                 width={140}
-                height={50}
+                height={48}
                 className="h-12 w-auto object-contain"
                 priority
               />
