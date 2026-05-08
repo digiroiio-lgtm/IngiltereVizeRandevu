@@ -24,6 +24,10 @@ export default function VisaCentersPage() {
         <Link href="/ingiltere-vize-randevu-ankara" className="rounded-full border border-slate-300 px-3 py-1 text-sm">Ankara</Link>
         <Link href="/ingiltere-vize-randevu-izmir" className="rounded-full border border-slate-300 px-3 py-1 text-sm">İzmir</Link>
         <Link href="/ingiltere-vize-randevu-antalya" className="rounded-full border border-slate-300 px-3 py-1 text-sm">Antalya</Link>
+        <Link href="/ingiltere-vize-randevu-adana" className="rounded-full border border-slate-300 px-3 py-1 text-sm">Adana</Link>
+        <Link href="/ingiltere-vize-randevu-bursa" className="rounded-full border border-slate-300 px-3 py-1 text-sm">Bursa</Link>
+        <Link href="/ingiltere-vize-randevu-gaziantep" className="rounded-full border border-slate-300 px-3 py-1 text-sm">Gaziantep</Link>
+        <Link href="/ingiltere-vize-randevu-trabzon" className="rounded-full border border-slate-300 px-3 py-1 text-sm">Trabzon</Link>
       </div>
     </div>
   );
