@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 
 export const siteConfig = {
   name: "İngiltere Vize Randevu",
-  url: "https://ingilterevizerandevu.com",
+  url: "https://ukvizebasvuru.com",
   whatsapp: "https://wa.me/905531229372",
   phone: "+90 553 122 93 72",
-  email: "destek@ingilterevizerandevu.com",
+  email: "destek@ukvizebasvuru.com",
 };
 
 export function pageMetadata(title: string, description: string, path: string): Metadata {
