@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { consultancyFees, faqItems, govFees, pageMetadata, processSteps, siteConfig } from "@/lib/site";
 
 export const metadata = pageMetadata(
@@ -6,6 +7,14 @@ export const metadata = pageMetadata(
   "İngiltere vize başvurunuzu profesyonel şekilde yönetin: evrak organizasyonu, VFS yükleme desteği, finansal dosya hazırlığı.",
   "/",
 );
+
+function ArrowRightIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M5 12h14M12 5l7 7-7 7" />
+    </svg>
+  );
+}
 
 const stats = [
   { value: "1.200+", label: "Başarılı Başvuru" },
@@ -22,10 +31,10 @@ const trustPills = [
 ];
 
 const heroSteps = [
-  { label: "Online Form & Ödeme", done: true },
+  { label: "Online Başvuru ve Ödeme", done: true },
   { label: "Evrak Organizasyonu", done: true },
   { label: "VFS Randevu", done: true },
-  { label: "Biyometri Randevusu", done: false },
+  { label: "Parmak İzi ve Fotoğraf Randevusu", done: false },
   { label: "Pasaport Teslimi", done: false },
 ];
 
@@ -42,7 +51,7 @@ const services = [
   },
   {
     icon: "🗓️",
-    title: "VFS Workflow Optimizasyonu",
+    title: "VFS Süreç Optimizasyonu",
     desc: "Randevu zamanlaması, biyometri hazırlığı ve online yükleme adımlarında hatasız süreç.",
   },
 ];
@@ -78,7 +87,7 @@ export default function Home() {
               {/* Headline */}
               <h1 className="animate-fade-up delay-100 text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-[1.05] tracking-tight text-white">
                 Hızlı &amp; Güvenilir<br />
-                <span style={{ color: "#0EA5E9" }}>UK Vize</span><br />
+                <span style={{ color: "#0EA5E9" }}>İngiltere Vize</span><br />
                 Başvurusu
               </h1>
 
@@ -132,7 +141,7 @@ export default function Home() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-[10px] font-semibold uppercase tracking-widest text-white/50">Başvuru Durumu</p>
-                    <p className="mt-0.5 text-sm font-semibold text-white">Standard Visitor Visa</p>
+                    <p className="mt-0.5 text-sm font-semibold text-white">Standart Ziyaretçi Vizesi</p>
                   </div>
                   <span className="rounded-full border border-emerald-500/30 bg-emerald-500/15 px-2.5 py-0.5 text-[11px] font-medium text-emerald-400">
                     Aktif
@@ -205,7 +214,7 @@ export default function Home() {
             Başvurunuzu Birlikte Yönetelim
           </h2>
           <p className="max-w-2xl text-base text-[#64748B]">
-            UKVI mevzuatını takip eden, VFS süreçlerinde deneyim sahibi ekibimizle dosyanızı en güçlü biçimde hazırlıyoruz.
+            İngiltere Vize Mevzuatını takip eden, VFS süreçlerinde deneyim sahibi ekibimizle dosyanızı en güçlü biçimde hazırlıyoruz.
           </p>
         </div>
 
@@ -259,43 +268,76 @@ export default function Home() {
           <p className="text-xs font-semibold uppercase tracking-wider text-[#2563EB]">Altyapı</p>
           <h2 className="text-3xl font-bold tracking-tight text-[#0F172A] md:text-4xl">VFS Global Sistemi</h2>
           <p className="max-w-2xl text-base text-[#64748B]">
-            Randevu, biyometri ve upload sürecinde evrakların doğru kategori ve formatta yönetilmesi kritik önemdedir.
+            Randevu, biyometrik işlemler ve belge yükleme sürecinde evrakların doğru kategori ve formatta yönetilmesi kritik önemdedir.
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3">
           {[
             {
-              title: "VFS Workflow",
-              desc: "Form sonrası randevu slot yönetimi, merkez seçimi ve dosya planlama yapılır.",
-              icon: "⚙️",
+              label: "SÜREÇ AKIŞI",
+              title: "VFS Süreç Akışı",
+              desc: "Başvuru sonrası randevu kontenjan yönetimi, merkez seçimi ve evrak planlaması.",
+              image: "/images/uk-visa/tower-bridge-london.jpeg",
+              alt: "Londra VFS Süreç Yönetimi",
+              href: "/vfs-rehberi",
+              priority: true,
             },
             {
-              title: "Biyometrik Randevu",
-              desc: "Biyometri gününde pasaport, başvuru dökümleri ve destekleyici evrak eşleştirmesi.",
-              icon: "🪪",
+              label: "BİYOMETRİK İŞLEMLER",
+              title: "Parmak İzi ve Fotoğraf Randevusu",
+              desc: "Pasaport, biyometrik işlemler ve destekleyici belgeler sürecinin koordinasyonu.",
+              image: "/images/uk-visa/uk-biometric-center-2.jpeg",
+              alt: "İngiltere Biyometri Merkezi — Parmak İzi ve Fotoğraf Randevusu",
+              href: "/vfs-global-randevu",
+              priority: false,
             },
             {
-              title: "Upload Intelligence",
-              desc: "PDF boyutu, isimlendirme ve kategori doğruluğu ret riskini önemli ölçüde düşürür.",
-              icon: "☁️",
+              label: "BELGE YÜKLEME SİSTEMİ",
+              title: "Akıllı Belge Yükleme Sistemi",
+              desc: "PDF boyutu, kategori eşleşmesi ve dosya isimlendirme düzeni optimizasyonu.",
+              image: "/images/uk-visa/vfs-upload-system.jpeg",
+              alt: "VFS Belge Yükleme Sistemi",
+              href: "/vfs-rehberi",
+              priority: false,
             },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="hover-lift rounded-[22px] border border-[#E2E8F0] bg-white p-6 space-y-3"
+          ].map((card) => (
+            <Link
+              key={card.title}
+              href={card.href}
+              className="group flex flex-col rounded-3xl border border-neutral-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
-              <span className="text-3xl">{item.icon}</span>
-              <h3 className="font-semibold text-[#0F172A]">{item.title}</h3>
-              <p className="text-sm leading-relaxed text-[#64748B]">{item.desc}</p>
-            </div>
+              {/* Image */}
+              <div className="relative aspect-video overflow-hidden rounded-t-3xl">
+                <Image
+                  src={card.image}
+                  alt={card.alt}
+                  fill
+                  priority={card.priority}
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              </div>
+
+              {/* Content */}
+              <div className="flex flex-col flex-1 gap-2 p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">{card.label}</p>
+                <h3 className="text-2xl font-semibold tracking-tight text-[#0F172A]">{card.title}</h3>
+                <p className="text-neutral-600 leading-relaxed text-sm flex-1">{card.desc}</p>
+                <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-blue-600 group-hover:gap-2 transition-all duration-200">
+                  İncele
+                  <ArrowRightIcon />
+                </span>
+              </div>
+            </Link>
           ))}
         </div>
 
         <p className="text-sm text-[#64748B]">
           Otorite referansları:{" "}
           <a className="text-[#2563EB] hover:underline" href="https://www.gov.uk/standard-visitor" target="_blank" rel="noopener noreferrer">
-            GOV.UK Standard Visitor
+            GOV.UK Ziyaretçi Vizesi Rehberi
           </a>{" "}
           ve{" "}
           <a className="text-[#2563EB] hover:underline" href="https://visa.vfsglobal.com" target="_blank" rel="noopener noreferrer">
@@ -319,7 +361,7 @@ export default function Home() {
             <div className="rounded-[22px] overflow-hidden border border-[#E2E8F0] bg-white">
               <div className="border-b border-[#E2E8F0] bg-[#F8FAFC] px-6 py-4">
                 <h3 className="font-semibold text-[#0F172A]">UKVI Resmi Harçları</h3>
-                <p className="text-xs text-[#64748B]">UK Government tarafından belirlenir</p>
+                <p className="text-xs text-[#64748B]">Birleşik Krallık Hükümeti tarafından belirlenir</p>
               </div>
               <table className="w-full text-sm">
                 <tbody>
@@ -360,7 +402,7 @@ export default function Home() {
           </div>
 
           <div className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3.5 text-sm text-amber-900">
-            ⚠️ Resmi UK Government harçları danışmanlık ücretlerinden tamamen ayrıdır. Vize kararı yalnızca UKVI tarafından verilir.
+            ⚠️ Resmi Birleşik Krallık Hükümeti harçları danışmanlık ücretlerinden tamamen ayrıdır. Vize kararı yalnızca UKVI tarafından verilir.
           </div>
         </div>
       </section>
@@ -429,7 +471,7 @@ export default function Home() {
 
             <div className="grid grid-cols-2 gap-3">
               {[
-                { icon: "📧", label: "Email Desteği", val: siteConfig.email },
+                { icon: "📧", label: "E-posta Desteği", val: siteConfig.email },
                 { icon: "📞", label: "Telefon", val: siteConfig.phone },
                 { icon: "🏙️", label: "Hizmet Şehirleri", val: "İstanbul, Ankara +6" },
                 { icon: "⏱️", label: "Yanıt Süresi", val: "Aynı gün" },

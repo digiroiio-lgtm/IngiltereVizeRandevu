@@ -21,6 +21,10 @@ const staticRoutes = [
   "/ingiltere-vize-randevu-ankara",
   "/ingiltere-vize-randevu-izmir",
   "/ingiltere-vize-randevu-antalya",
+  "/ingiltere-vize-randevu-adana",
+  "/ingiltere-vize-randevu-bursa",
+  "/ingiltere-vize-randevu-gaziantep",
+  "/ingiltere-vize-randevu-trabzon",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

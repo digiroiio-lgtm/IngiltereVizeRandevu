@@ -25,7 +25,7 @@ export function ServicePage({ title, description, points, slug }: ServicePagePro
             ))}
           </ul>
           <p className="text-sm text-slate-600">
-            Danışmanlık ücretleri UK Government ücretlerinden ayrıdır. Vize kararları yalnızca UKVI tarafından verilir.
+            Danışmanlık ücretleri Birleşik Krallık Hükümeti ücretlerinden ayrıdır. Vize kararları yalnızca UKVI tarafından verilir.
           </p>
           <div className="flex flex-wrap gap-2 text-sm">
             <Link href="/ucretler" className="rounded-full border border-slate-300 px-3 py-1">

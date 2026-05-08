@@ -18,7 +18,7 @@ export default function PricingPage() {
           <tbody>{consultancyFees.map((item) => <tr key={item.package} className="border-t border-slate-100"><td className="p-3">{item.package}</td><td className="p-3">{item.gbp}</td><td className="p-3">{item.tl}</td></tr>)}</tbody>
         </table>
       </div>
-      <p className="rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm">Official UK Government fees are separate from consultancy fees.</p>
+      <p className="rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm">Resmi devlet harçları danışmanlık ücretlerinden ayrıdır.</p>
     </div>
   );
 }
