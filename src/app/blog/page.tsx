@@ -28,7 +28,7 @@ export default function BlogPage() {
             <div className="flex items-center gap-2">
               <span
                 className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
-                  post.category === "Money Page"
+                  post.category === "Ana Hizmet Sayfası"
                     ? "bg-amber-100 text-amber-800"
                     : "bg-blue-100 text-blue-800"
                 }`}

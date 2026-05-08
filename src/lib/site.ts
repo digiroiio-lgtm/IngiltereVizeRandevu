@@ -243,7 +243,7 @@ export const blogPosts = [
     slug: "ingiltere-multiple-entry-vizesi",
     title: "İngiltere Çok Girişli Vizesi",
     excerpt: "Çok girişli vize için seyahat profili ve belge stratejisi.",
-    author: "UK Vize Danışmanlık Ekibi",
+    category: "Destek Rehberi",
     date: "2026-05-17",
     readingTime: "8 dk okuma",
   },
