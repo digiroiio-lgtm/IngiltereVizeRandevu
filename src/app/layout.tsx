@@ -79,7 +79,7 @@ export default function RootLayout({
 
         {/* ── Header ────────────────────────────────────────────────── */}
         <header className="sticky top-0 z-50 h-[78px] border-b border-[#E2E8F0] bg-white/85 backdrop-blur-xl">
-          <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-6">
+          <div className="mx-auto flex h-full max-w-[1560px] items-center justify-between gap-6 px-6">
             {/* Logo */}
             <Link href="/" className="flex items-center shrink-0">
               <Image
@@ -128,11 +128,11 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main className="mx-auto w-full max-w-7xl flex-1 px-6 py-8">{children}</main>
+        <main className="mx-auto w-full max-w-[1560px] flex-1 px-6 py-8">{children}</main>
 
         {/* ── Footer ────────────────────────────────────────────────── */}
         <footer className="mt-20 border-t border-[#E2E8F0] bg-white">
-          <div className="mx-auto max-w-7xl px-6 py-12">
+          <div className="mx-auto max-w-[1560px] px-6 py-12">
             <div className="grid gap-10 md:grid-cols-4">
               {/* Brand */}
               <div className="space-y-3">
@@ -212,7 +212,7 @@ export default function RootLayout({
               href="/iletisim"
               className="btn-primary flex-1 rounded-xl py-2.5 text-center text-sm font-semibold"
             >
-              Randevu Al
+              Ücretsiz Değerlendirme
             </Link>
             <a
               href={siteConfig.whatsapp}

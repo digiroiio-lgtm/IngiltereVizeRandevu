@@ -62,7 +62,7 @@ export default function Home() {
 
       {/* ── HERO ─────────────────────────────────────────────────────── */}
       <section
-        className="relative -mx-6 -mt-8 flex min-h-[88svh] items-center overflow-hidden md:min-h-[88vh]"
+        className="relative -mx-6 -mt-8 flex min-h-[82svh] items-center overflow-hidden md:min-h-[85vh]"
         style={{ background: "linear-gradient(135deg, #0F172A 0%, #1E3A8A 55%, #0F172A 100%)" }}
       >
         {/* Dot grid overlay */}
@@ -73,7 +73,7 @@ export default function Home() {
           style={{ background: "radial-gradient(circle, rgba(37,99,235,0.25) 0%, transparent 70%)" }}
         />
 
-        <div className="relative mx-auto w-full max-w-7xl px-6 py-20">
+        <div className="relative mx-auto w-full max-w-[1560px] px-6 py-14 md:py-20">
           <div className="grid items-center gap-12 md:grid-cols-2">
 
             {/* Left — copy */}
@@ -85,10 +85,10 @@ export default function Home() {
               </div>
 
               {/* Headline */}
-              <h1 className="animate-fade-up delay-100 text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-[1.05] tracking-tight text-white">
-                Hızlı &amp; Güvenilir<br />
-                <span style={{ color: "#0EA5E9" }}>İngiltere Vize</span><br />
-                Başvurusu
+              <h1 className="animate-fade-up delay-100 text-[clamp(2rem,4.5vw,4rem)] font-bold leading-[1.08] tracking-tight text-white">
+                İngiltere Vizesi İçin<br />
+                <span style={{ color: "#0EA5E9" }}>Profesyonel Başvuru</span><br />
+                Desteği
               </h1>
 
               {/* Sub */}
@@ -103,17 +103,28 @@ export default function Home() {
                   href="/iletisim"
                   className="btn-primary inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold"
                 >
-                  Randevu Al
+                  Ücretsiz Ön Değerlendirme
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Link>
                 <Link
-                  href="/vfs-rehberi"
+                  href="/iletisim"
                   className="btn-ghost inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold"
                 >
-                  Gereksinimleri İncele
+                  Başvurumu Planla
                 </Link>
+                <a
+                  href={siteConfig.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl border border-emerald-500/50 bg-emerald-500/15 px-5 py-3 text-sm font-semibold text-emerald-300 hover:bg-emerald-500/25 transition-colors"
+                >
+                  <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                  </svg>
+                  WhatsApp&rsquo;tan Yaz
+                </a>
               </div>
 
               {/* Trust pills */}
@@ -185,15 +196,46 @@ export default function Home() {
                 <p className="text-2xl font-bold text-[#0F172A]">1.200+</p>
                 <p className="text-[11px] text-[#64748B]">Başvuru</p>
               </div>
+
+              {/* Floating badge — response time */}
+              <div className="absolute bottom-10 right-4 animate-fade-up delay-500 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-center shadow-lg">
+                <p className="text-sm font-bold text-emerald-700">⚡ 15 dk</p>
+                <p className="text-[11px] text-emerald-600">Yanıt Süresi</p>
+              </div>
             </div>
 
           </div>
         </div>
       </section>
 
+      {/* ── SOCIAL PROOF BAR ─────────────────────────────────────────── */}
+      <section className="-mx-6 border-b border-[#E2E8F0] bg-white py-3">
+        <div className="mx-auto flex max-w-[1560px] flex-wrap items-center justify-center gap-x-8 gap-y-2 px-6 text-sm">
+          <span className="flex items-center gap-1.5 text-[#334155]">
+            <span className="text-amber-400">★★★★★</span>
+            <span className="font-semibold text-[#0F172A]">4.9</span>
+            <span className="text-[#64748B]">— Danışan puanı</span>
+          </span>
+          <span className="hidden h-4 w-px bg-[#E2E8F0] sm:block" />
+          <span className="flex items-center gap-1.5 text-[#334155]">
+            <span className="inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+            <span className="font-medium text-[#0F172A]">Bugün 14 kişi</span>
+            <span className="text-[#64748B]">başvuru sürecini başlattı</span>
+          </span>
+          <span className="hidden h-4 w-px bg-[#E2E8F0] sm:block" />
+          <span className="flex items-center gap-1.5 text-[#64748B]">
+            <span>🔒</span> Bilgileriniz güvenli şekilde korunur
+          </span>
+          <span className="hidden h-4 w-px bg-[#E2E8F0] sm:block" />
+          <span className="flex items-center gap-1.5 text-[#64748B]">
+            <span>⚡</span> Ortalama yanıt süresi: 15 dk
+          </span>
+        </div>
+      </section>
+
       {/* ── STATS STRIP ─────────────────────────────────────────────── */}
       <section className="-mx-6 border-y border-[#E2E8F0] bg-white">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 px-6 md:grid-cols-4">
+        <div className="mx-auto grid max-w-[1560px] grid-cols-2 px-6 md:grid-cols-4">
           {stats.map((s, i) => (
             <div
               key={s.label}
@@ -234,7 +276,7 @@ export default function Home() {
 
       {/* ── PROCESS STEPS ───────────────────────────────────────────── */}
       <section className="-mx-6 mt-20 bg-[#F1F5F9] px-6 py-16">
-        <div className="mx-auto max-w-7xl space-y-8">
+        <div className="mx-auto max-w-[1560px] space-y-8">
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-wider text-[#2563EB]">Süreç</p>
             <h2 className="text-3xl font-bold tracking-tight text-[#0F172A] md:text-4xl">8 Adımda Başvuru</h2>
@@ -348,7 +390,7 @@ export default function Home() {
 
       {/* ── FEES ────────────────────────────────────────────────────── */}
       <section className="-mx-6 mt-20 bg-[#F8FAFC] px-6 py-16">
-        <div className="mx-auto max-w-7xl space-y-8">
+        <div className="mx-auto max-w-[1560px] space-y-8">
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-wider text-[#2563EB]">Ücretler</p>
             <h2 className="text-3xl font-bold tracking-tight text-[#0F172A] md:text-4xl">Şeffaf Fiyatlandırma</h2>
@@ -442,7 +484,7 @@ export default function Home() {
         className="-mx-6 mt-20 px-6 py-16"
         style={{ background: "linear-gradient(135deg,#0F172A 0%,#1E3A8A 60%,#0F172A 100%)" }}
       >
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1560px]">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">
