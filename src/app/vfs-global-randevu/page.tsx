@@ -11,7 +11,7 @@ export default function VfsGlobalAppointmentPage() {
       description="Merkez seçimi, tarih planlaması ve başvuru dosyası ile uyumlu randevu stratejisi."
       points={[
         "İstanbul, Ankara, Antalya, İzmir merkez planlaması",
-        "Biometric appointment öncesi evrak dizilimi",
+        "Parmak izi ve fotoğraf randevusu öncesi evrak dizilimi",
         "Randevu sonrası takip ve pasaport teslim süreci",
       ]}
     />

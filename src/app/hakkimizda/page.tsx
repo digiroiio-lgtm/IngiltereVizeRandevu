@@ -21,8 +21,8 @@ const expertise = [
   },
   {
     icon: "🗓️",
-    title: "VFS Workflow Optimizasyonu",
-    desc: "Randevu zamanlaması, biyometri süreci ve online yükleme adımlarında hata payını sıfıra yaklaştıran akış yönetimi.",
+    title: "VFS Süreç Optimizasyonu",
+    desc: "Randevu zamanlaması, biyometrik işlemler ve online belge yükleme adımlarında hata payını sıfıra yaklaştıran akış yönetimi.",
   },
   {
     icon: "✈️",
@@ -55,7 +55,7 @@ const values = [
   },
   {
     title: "Uzmanlık",
-    desc: "UKVI mevzuatını yakından takip eden, yüzlerce farklı profili yönetmiş deneyimli kadro.",
+    desc: "İngiltere Vize Mevzuatını yakından takip eden, yüzlerce farklı profili yönetmiş deneyimli kadro.",
   },
   {
     title: "Hız",
@@ -134,7 +134,7 @@ export default function AboutPage() {
         </p>
         <p className="text-slate-600 max-w-3xl">
           İçerik ve süreç mimarimiz; yüzlerce farklı profilin yönetilmesinden elde edilen gerçek dünya deneyimiyle
-          şekillenmiştir. UKVI mevzuatı değiştikçe hizmet anlayışımızı ve içeriklerimizi güncellemeye devam ediyoruz.
+          şekillenmiştir. İngiltere Vize Mevzuatı değiştikçe hizmet anlayışımızı ve içeriklerimizi güncellemeye devam ediyoruz.
         </p>
 
       </section>

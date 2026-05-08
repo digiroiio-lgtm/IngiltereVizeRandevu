@@ -10,9 +10,9 @@ export default function VfsGuidePage() {
       title="VFS Rehberi"
       description="VFS Global randevu akışı, biyometri günü ve evrak yükleme yönetimi."
       points={[
-        "Randevu slot seçimi ve merkez optimizasyonu",
-        "Biyometri günü belge kontrol simülasyonu",
-        "Upload kategorileri ve PDF standardizasyonu",
+        "Randevu kontenjan seçimi ve merkez optimizasyonu",
+        "Parmak izi ve fotoğraf randevusu gün belge kontrol simülasyonu",
+        "Belge yükleme kategorileri ve PDF standardizasyonu",
       ]}
     />
   );

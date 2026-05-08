@@ -37,7 +37,7 @@ const websiteSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "UK Visa Application Intelligence Platform",
+  name: "İngiltere Vize Başvuru Danışmanlık Platformu",
   provider: { "@type": "Organization", name: siteConfig.name },
   areaServed: "TR",
   serviceType: "UK Visa Consultancy",
@@ -141,7 +141,7 @@ export default function RootLayout({
                   <span className="font-semibold text-sm text-[#0F172A]">İngiltere Vize Randevu</span>
                 </Link>
                 <p className="text-xs text-[#64748B] leading-relaxed max-w-[200px]">
-                  Türk vatandaşları için profesyonel UK vize danışmanlığı platformu.
+                  Türk vatandaşları için profesyonel İngiltere vize danışmanlığı platformu.
                 </p>
                 <a
                   href={siteConfig.whatsapp}
@@ -198,8 +198,8 @@ export default function RootLayout({
             </div>
 
             <div className="mt-10 border-t border-[#E2E8F0] pt-6 text-xs text-[#94A3B8] leading-relaxed">
-              Bu web sitesi resmi bir UK Government web sitesi değildir. Vize kararları yalnızca UKVI tarafından verilir.
-              Vize onayı garantisi verilmez. VFS Global üçüncü taraf hizmet sağlayıcıdır. Danışmanlık ücretleri UK Government
+              Bu web sitesi resmi bir Birleşik Krallık Hükümeti web sitesi değildir. Vize kararları yalnızca UKVI tarafından verilir.
+              Vize onayı garantisi verilmez. VFS Global üçüncü taraf hizmet sağlayıcıdır. Danışmanlık ücretleri Birleşik Krallık Hükümeti
               ücretlerinden ayrıdır.
             </div>
           </div>

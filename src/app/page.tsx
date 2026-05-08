@@ -31,10 +31,10 @@ const trustPills = [
 ];
 
 const heroSteps = [
-  { label: "Online Form & Ödeme", done: true },
+  { label: "Online Başvuru ve Ödeme", done: true },
   { label: "Evrak Organizasyonu", done: true },
   { label: "VFS Randevu", done: true },
-  { label: "Biyometri Randevusu", done: false },
+  { label: "Parmak İzi ve Fotoğraf Randevusu", done: false },
   { label: "Pasaport Teslimi", done: false },
 ];
 
@@ -51,7 +51,7 @@ const services = [
   },
   {
     icon: "🗓️",
-    title: "VFS Workflow Optimizasyonu",
+    title: "VFS Süreç Optimizasyonu",
     desc: "Randevu zamanlaması, biyometri hazırlığı ve online yükleme adımlarında hatasız süreç.",
   },
 ];
@@ -87,7 +87,7 @@ export default function Home() {
               {/* Headline */}
               <h1 className="animate-fade-up delay-100 text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-[1.05] tracking-tight text-white">
                 Hızlı &amp; Güvenilir<br />
-                <span style={{ color: "#0EA5E9" }}>UK Vize</span><br />
+                <span style={{ color: "#0EA5E9" }}>İngiltere Vize</span><br />
                 Başvurusu
               </h1>
 
@@ -141,7 +141,7 @@ export default function Home() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-[10px] font-semibold uppercase tracking-widest text-white/50">Başvuru Durumu</p>
-                    <p className="mt-0.5 text-sm font-semibold text-white">Standard Visitor Visa</p>
+                    <p className="mt-0.5 text-sm font-semibold text-white">Standart Ziyaretçi Vizesi</p>
                   </div>
                   <span className="rounded-full border border-emerald-500/30 bg-emerald-500/15 px-2.5 py-0.5 text-[11px] font-medium text-emerald-400">
                     Aktif
@@ -214,7 +214,7 @@ export default function Home() {
             Başvurunuzu Birlikte Yönetelim
           </h2>
           <p className="max-w-2xl text-base text-[#64748B]">
-            UKVI mevzuatını takip eden, VFS süreçlerinde deneyim sahibi ekibimizle dosyanızı en güçlü biçimde hazırlıyoruz.
+            İngiltere Vize Mevzuatını takip eden, VFS süreçlerinde deneyim sahibi ekibimizle dosyanızı en güçlü biçimde hazırlıyoruz.
           </p>
         </div>
 
@@ -268,36 +268,36 @@ export default function Home() {
           <p className="text-xs font-semibold uppercase tracking-wider text-[#2563EB]">Altyapı</p>
           <h2 className="text-3xl font-bold tracking-tight text-[#0F172A] md:text-4xl">VFS Global Sistemi</h2>
           <p className="max-w-2xl text-base text-[#64748B]">
-            Randevu, biyometri ve upload sürecinde evrakların doğru kategori ve formatta yönetilmesi kritik önemdedir.
+            Randevu, biyometrik işlemler ve belge yükleme sürecinde evrakların doğru kategori ve formatta yönetilmesi kritik önemdedir.
           </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
           {[
             {
-              label: "WORKFLOW",
-              title: "VFS Workflow",
-              desc: "Başvuru sonrası randevu slot yönetimi, merkez seçimi ve evrak planlaması.",
+              label: "SÜREÇ AKIŞI",
+              title: "VFS Süreç Akışı",
+              desc: "Başvuru sonrası randevu kontenjan yönetimi, merkez seçimi ve evrak planlaması.",
               image: "/images/uk-visa/tower-bridge-london.jpeg",
-              alt: "Tower Bridge London — VFS Workflow",
+              alt: "Londra VFS Süreç Yönetimi",
               href: "/vfs-rehberi",
               priority: true,
             },
             {
-              label: "BIOMETRICS",
-              title: "Biometrik Randevu",
-              desc: "Pasaport, biyometri ve supporting documents sürecinin koordinasyonu.",
+              label: "BİYOMETRİK İŞLEMLER",
+              title: "Parmak İzi ve Fotoğraf Randevusu",
+              desc: "Pasaport, biyometrik işlemler ve destekleyici belgeler sürecinin koordinasyonu.",
               image: "/images/uk-visa/uk-biometric-center-2.jpeg",
-              alt: "UK Biometric Center — Biometrik Randevu",
+              alt: "İngiltere Biyometri Merkezi — Parmak İzi ve Fotoğraf Randevusu",
               href: "/vfs-global-randevu",
               priority: false,
             },
             {
-              label: "UPLOAD SYSTEM",
-              title: "Upload Intelligence",
-              desc: "PDF boyutu, kategori eşleşmesi ve naming structure optimizasyonu.",
+              label: "BELGE YÜKLEME SİSTEMİ",
+              title: "Akıllı Belge Yükleme Sistemi",
+              desc: "PDF boyutu, kategori eşleşmesi ve dosya isimlendirme düzeni optimizasyonu.",
               image: "/images/uk-visa/vfs-upload-system.jpeg",
-              alt: "VFS Upload System — Upload Intelligence",
+              alt: "VFS Belge Yükleme Sistemi",
               href: "/vfs-rehberi",
               priority: false,
             },
@@ -337,7 +337,7 @@ export default function Home() {
         <p className="text-sm text-[#64748B]">
           Otorite referansları:{" "}
           <a className="text-[#2563EB] hover:underline" href="https://www.gov.uk/standard-visitor" target="_blank" rel="noopener noreferrer">
-            GOV.UK Standard Visitor
+            GOV.UK Ziyaretçi Vizesi Rehberi
           </a>{" "}
           ve{" "}
           <a className="text-[#2563EB] hover:underline" href="https://visa.vfsglobal.com" target="_blank" rel="noopener noreferrer">
@@ -361,7 +361,7 @@ export default function Home() {
             <div className="rounded-[22px] overflow-hidden border border-[#E2E8F0] bg-white">
               <div className="border-b border-[#E2E8F0] bg-[#F8FAFC] px-6 py-4">
                 <h3 className="font-semibold text-[#0F172A]">UKVI Resmi Harçları</h3>
-                <p className="text-xs text-[#64748B]">UK Government tarafından belirlenir</p>
+                <p className="text-xs text-[#64748B]">Birleşik Krallık Hükümeti tarafından belirlenir</p>
               </div>
               <table className="w-full text-sm">
                 <tbody>
@@ -402,7 +402,7 @@ export default function Home() {
           </div>
 
           <div className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3.5 text-sm text-amber-900">
-            ⚠️ Resmi UK Government harçları danışmanlık ücretlerinden tamamen ayrıdır. Vize kararı yalnızca UKVI tarafından verilir.
+            ⚠️ Resmi Birleşik Krallık Hükümeti harçları danışmanlık ücretlerinden tamamen ayrıdır. Vize kararı yalnızca UKVI tarafından verilir.
           </div>
         </div>
       </section>
@@ -471,7 +471,7 @@ export default function Home() {
 
             <div className="grid grid-cols-2 gap-3">
               {[
-                { icon: "📧", label: "Email Desteği", val: siteConfig.email },
+                { icon: "📧", label: "E-posta Desteği", val: siteConfig.email },
                 { icon: "📞", label: "Telefon", val: siteConfig.phone },
                 { icon: "🏙️", label: "Hizmet Şehirleri", val: "İstanbul, Ankara +6" },
                 { icon: "⏱️", label: "Yanıt Süresi", val: "Aynı gün" },
