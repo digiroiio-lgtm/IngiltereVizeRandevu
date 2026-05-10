@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { JsonLd } from "@/components/json-ld";
+import { blogBodyContent } from "@/lib/blog-content";
 import { blogPosts, pageMetadata, siteConfig } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -52,7 +53,14 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
         ]}
       />
       <h1 className="text-3xl font-semibold">{post.title}</h1>
-      <p className="text-slate-700">{post.excerpt}</p>
+      <p className="text-lg text-slate-700">{post.excerpt}</p>
+      {blogBodyContent[post.slug] && (
+        <div className="space-y-4 text-slate-700">
+          {blogBodyContent[post.slug].map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
+      )}
       <div className="rounded-xl border border-slate-200 bg-white p-5 text-slate-700">
         <p>
           Bu rehberde başvuru amacı, finansal dosya kurgusu, VFS upload düzeni ve randevu zamanlaması ekseninde uygulanabilir

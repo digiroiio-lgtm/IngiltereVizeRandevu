@@ -98,6 +98,22 @@ export const faqItems = [
     q: "Vize reddi durumunda ne olur?",
     a: "Ret gerekçesi analiz edilerek dosya revize edilir, yeni strateji ile yeniden başvuru hazırlanır.",
   },
+  {
+    q: "Ret gerekçesi mektubunda ne yazıyor?",
+    a: "Ret mektubunda UKVI'nin başvuruyu neden reddettiğine dair gerekçeler yer almaktadır. Bu gerekçeler sonraki başvurunun stratejisini belirlemede temel başvuru kaynağıdır.",
+  },
+  {
+    q: "Öncelikli işlem (Priority Visa) ne sağlar?",
+    a: "Öncelikli işlem, karar süresini standart 15 iş gününden 5 iş gününe kısaltır. Vize onayını garanti etmez; yalnızca değerlendirme sürecini hızlandırır.",
+  },
+  {
+    q: "Pasaport ne zaman iade edilir?",
+    a: "Başvuru sonuçlandıktan sonra pasaportunuz VFS merkezi üzerinden ya da kurye hizmeti aracılığıyla iade edilmektedir. Süre başvurunun onay ya da ret almasına göre değişebilmektedir.",
+  },
+  {
+    q: "Türkiye'nin hangi şehirlerinden başvuru yapılabilir?",
+    a: "VFS Global aracılığıyla İstanbul, Ankara, Antalya, İzmir, Adana, Bursa, Gaziantep ve Trabzon'dan randevu alınabilmektedir. Yakın bir şehirde randevu oluşturulabilir.",
+  },
 ];
 
 export const centers = [
