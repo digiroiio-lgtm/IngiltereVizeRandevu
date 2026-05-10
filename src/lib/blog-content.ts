@@ -96,7 +96,7 @@ export const blogBodyContent: Record<string, string[]> = {
   ],
   "pdf-dosya-isimlendirme-rehberi": [
     "VFS Global'e yüklenecek PDF dosyalarının düzenli ve anlamlı biçimde isimlendirilmesi hem sistem gereksinimleri hem de başvurunuzun profesyonel görünümü açısından önem taşımaktadır. Doğru isimlendirme hangi belgenin hangi kategoriye ait olduğunu açıkça ortaya koyar.",
-    "Önerilen dosya isimlendirme formatı 'ad-soyad_belge-turu_tarih' şeklindedir. Örneğin 'ahmet-yilmaz_banka-dokumdokum_2026-01' gibi bir format dosyanın içeriğini hemen ortaya koymaktadır. Türkçe karakter kullanımından kaçınılması ve boşluk yerine tire ya da alt çizgi kullanılması önerilmektedir.",
+    "Önerilen dosya isimlendirme formatı 'ad-soyad_belge-turu_tarih' şeklindedir. Örneğin 'ahmet-yilmaz_banka-dokumu_2026-01' gibi bir format dosyanın içeriğini hemen ortaya koymaktadır. Türkçe karakter kullanımından kaçınılması ve boşluk yerine tire ya da alt çizgi kullanılması önerilmektedir.",
     "Belge kategorilerine göre ayrı klasörler oluşturulması yükleme sürecini kolaylaştırmakta ve eksik belge riskini azaltmaktadır. Belge düzenleme sisteminizi birlikte oluşturmak için danışmanlık desteğimizden yararlanabilirsiniz.",
   ],
   "ingiltere-turist-vizesi": [

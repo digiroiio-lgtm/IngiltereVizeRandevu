@@ -100,7 +100,7 @@ export const faqItems = [
   },
   {
     q: "Ret gerekçesi mektubunda ne yazıyor?",
-    a: "Ret mektubunda UKVI'nin başvuruyu neden reddettiğine dair gerekçeler yer almaktadır. Bu gerekçeler sonraki başvurunun stratejisini belirlemede temel başvuru kaynağıdır.",
+    a: "Ret mektubunda UKVI'nin başvuruyu neden reddettiğine dair gerekçeler yer almaktadır. Bu gerekçeler sonraki başvurunun stratejisini belirlemede temel bilgi kaynağıdır.",
   },
   {
     q: "Öncelikli işlem (Priority Visa) ne sağlar?",
