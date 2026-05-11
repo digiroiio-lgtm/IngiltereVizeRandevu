@@ -119,7 +119,7 @@ export const blogPosts = [
     excerpt: "Başvurudan pasaport teslimine kadar süreç akışı.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-01-10",
+    date: "2026-04-01",
     readingTime: "8 dk okuma",
   },
   {
@@ -128,7 +128,7 @@ export const blogPosts = [
     excerpt: "Başvuru dosyanızı eksiksiz hale getiren evrak mimarisi.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-01-17",
+    date: "2026-04-02",
     readingTime: "7 dk okuma",
   },
   {
@@ -137,7 +137,7 @@ export const blogPosts = [
     excerpt: "Güncel UKVI ücretleri ve danışmanlık ücret ayrımı.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-02-03",
+    date: "2026-04-04",
     readingTime: "6 dk okuma",
   },
   {
@@ -146,7 +146,7 @@ export const blogPosts = [
     excerpt: "Turist vizesi dosyasında finansal ve operasyonel doğruluk.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-02-14",
+    date: "2026-04-05",
     readingTime: "8 dk okuma",
   },
   {
@@ -155,7 +155,7 @@ export const blogPosts = [
     excerpt: "Şirket sahipleri ve iş seyahati için belge yapısı.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-02-21",
+    date: "2026-04-07",
     readingTime: "7 dk okuma",
   },
   {
@@ -164,7 +164,7 @@ export const blogPosts = [
     excerpt: "VFS randevu planlama, evrak eşleşmesi ve tarih optimizasyonu.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-03-01",
+    date: "2026-04-08",
     readingTime: "7 dk okuma",
   },
   {
@@ -173,7 +173,7 @@ export const blogPosts = [
     excerpt: "PDF hazırlığı, isimlendirme ve belge eşleştirme.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-03-08",
+    date: "2026-04-10",
     readingTime: "6 dk okuma",
   },
   {
@@ -182,7 +182,7 @@ export const blogPosts = [
     excerpt: "Sık ret nedenleri ve önleyici başvuru stratejileri.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-03-15",
+    date: "2026-04-11",
     readingTime: "9 dk okuma",
   },
   {
@@ -191,7 +191,7 @@ export const blogPosts = [
     excerpt: "Hesap hareketlerinin finansal anlatım gücünü artırma.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-03-22",
+    date: "2026-04-13",
     readingTime: "8 dk okuma",
   },
   {
@@ -200,7 +200,7 @@ export const blogPosts = [
     excerpt: "Sponsor evrakları ve ilişki ispat düzeni.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-04-05",
+    date: "2026-04-14",
     readingTime: "8 dk okuma",
   },
   {
@@ -209,7 +209,7 @@ export const blogPosts = [
     excerpt: "Ticari faaliyet belgeleriyle güçlü dosya kurgusu.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-04-12",
+    date: "2026-04-16",
     readingTime: "9 dk okuma",
   },
   {
@@ -218,7 +218,7 @@ export const blogPosts = [
     excerpt: "VFS yüklemede düzenli klasör ve dosya standartları.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-04-19",
+    date: "2026-04-17",
     readingTime: "6 dk okuma",
   },
   {
@@ -227,7 +227,7 @@ export const blogPosts = [
     excerpt: "Süreleri etkileyen değişkenler ve planlama önerileri.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-05-03",
+    date: "2026-04-19",
     readingTime: "7 dk okuma",
   },
   {
@@ -236,7 +236,7 @@ export const blogPosts = [
     excerpt: "Finansal yeterlilikte tek rakam değil tutarlılık esastır.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-05-10",
+    date: "2026-04-21",
     readingTime: "8 dk okuma",
   },
   {
@@ -244,7 +244,7 @@ export const blogPosts = [
     title: "İngiltere Çok Girişli Vizesi",
     excerpt: "Çok girişli vize için seyahat profili ve belge stratejisi.",
     category: "Destek Rehberi",
-    date: "2026-05-17",
+    date: "2026-04-22",
     readingTime: "8 dk okuma",
   },
   // TIER S — MAX CONVERSION
@@ -254,7 +254,7 @@ export const blogPosts = [
     excerpt: "İngiltere vize başvurusunda doğru adımlar, evrak düzeni ve süreç yönetimi.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-06-01",
+    date: "2026-04-24",
     readingTime: "10 dk okuma",
   },
   {
@@ -263,7 +263,7 @@ export const blogPosts = [
     excerpt: "Başvuru dosyanızı eksiksiz hazırlamak için tüm evrak listesi ve checklist.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-06-08",
+    date: "2026-04-25",
     readingTime: "9 dk okuma",
   },
   {
@@ -272,7 +272,7 @@ export const blogPosts = [
     excerpt: "VFS sistemi üzerinden belge yükleme adımları, PDF hazırlığı ve yaygın hatalar.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-06-15",
+    date: "2026-04-27",
     readingTime: "7 dk okuma",
   },
   {
@@ -281,7 +281,7 @@ export const blogPosts = [
     excerpt: "VFS randevu sistemi üzerinden adım adım randevu alma rehberi.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-06-22",
+    date: "2026-04-28",
     readingTime: "7 dk okuma",
   },
   // TIER A — HIGH AUTHORITY
@@ -291,7 +291,7 @@ export const blogPosts = [
     excerpt: "UKVI'nin beklediği finansal yeterlilik düzeyi ve banka hesabı hazırlığı.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-07-05",
+    date: "2026-04-30",
     readingTime: "8 dk okuma",
   },
   {
@@ -300,7 +300,7 @@ export const blogPosts = [
     excerpt: "Sponsor ilişkisi, destekleyici evraklar ve dosya kurgusu.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-07-12",
+    date: "2026-05-02",
     readingTime: "9 dk okuma",
   },
   {
@@ -309,7 +309,7 @@ export const blogPosts = [
     excerpt: "Niyet mektubu yapısı, içerik stratejisi ve dikkat edilmesi gereken noktalar.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-07-19",
+    date: "2026-05-03",
     readingTime: "8 dk okuma",
   },
   {
@@ -318,7 +318,7 @@ export const blogPosts = [
     excerpt: "Çok girişli vize için seyahat geçmişi, profil kurgusu ve başvuru stratejisi.",
     category: "Ana Hizmet Sayfası",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-08-02",
+    date: "2026-05-05",
     readingTime: "8 dk okuma",
   },
   // TIER B — TOPICAL AUTHORITY
@@ -328,7 +328,7 @@ export const blogPosts = [
     excerpt: "Resmi portal üzerinden başvuru akışı, form doldurma ve ödeme adımları.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-08-09",
+    date: "2026-05-06",
     readingTime: "7 dk okuma",
   },
   {
@@ -337,7 +337,7 @@ export const blogPosts = [
     excerpt: "Online başvuru formunda dikkat edilmesi gereken kritik alanlar.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-08-16",
+    date: "2026-05-08",
     readingTime: "7 dk okuma",
   },
   {
@@ -346,7 +346,7 @@ export const blogPosts = [
     excerpt: "Turist vizesi için gereken belgeler, finansal yeterlilik ve başvuru stratejisi.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-09-06",
+    date: "2026-05-10",
     readingTime: "8 dk okuma",
   },
   {
@@ -355,7 +355,7 @@ export const blogPosts = [
     excerpt: "Randevu günü hazırlığı, biyometrik işlemler ve dikkat edilmesi gerekenler.",
     category: "Destek Rehberi",
     author: "UK Vize Danışmanlık Ekibi",
-    date: "2026-09-13",
+    date: "2026-05-11",
     readingTime: "6 dk okuma",
   },
 ];
