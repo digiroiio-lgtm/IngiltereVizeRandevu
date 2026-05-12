@@ -48,9 +48,15 @@ for (const slug of slugs) {
   const html = readFileSync(htmlPath, "utf8");
 
   const isError = html.includes('id="__next_error__"');
+  // As a secondary guard, a successfully rendered blog page must have at least one <h1> tag.
+  // This catches future cases where Next.js changes the error attribute name.
+  const hasH1 = /<h1[\s>]/.test(html);
 
-  if (isError) {
-    results.push({ slug, status: "FAIL", reason: "__next_error__ on <html> — page failed to render" });
+  if (isError || !hasH1) {
+    const reason = isError
+      ? "__next_error__ on <html> — page failed to render"
+      : "no <h1> found — page likely empty or 404";
+    results.push({ slug, status: "FAIL", reason });
     failed++;
   } else {
     results.push({ slug, status: "OK", reason: "" });

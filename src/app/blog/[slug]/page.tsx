@@ -291,6 +291,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
   if (!post) notFound();
+  // richArticleData only has entries for the two enriched slugs; all other posts use the generic layout below.
   const rich = richArticleData[post.slug];
 
   const articleSchema = {
