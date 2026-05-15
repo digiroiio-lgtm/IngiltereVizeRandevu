@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "İngiltere Vize Randevu",
   url: "https://ukvizebasvuru.com",
-  whatsapp: "https://wa.me/905531229372",
-  phone: "+90 553 122 93 72",
+  whatsapp: "https://wa.me/905550001111",
+  phone: "+90 555 000 11 11",
   email: "destek@ukvizebasvuru.com",
 };
 
